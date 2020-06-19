@@ -1,20 +1,14 @@
 package sample;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 public class Controller {
-@FXML
-    TextField txt;
-@FXML
-Label lbl;
-    public void bulEvent(){
-    int uzunluk;
-    uzunluk=txt.getLength();
-    lbl.setText("kelime uzunluğu:"+uzunluk+" karakter");
+    @FXML
+    TextField sayi1,sayi2,sonuc;
+    public void toplaEvent(){
+        int a,b;
+        a=Integer.valueOf(sayi1.getText());
+        b=Integer.valueOf(sayi2.getText());
+        sonuc.setText(String.valueOf(a+b));
+    }
 }
-}
-
-
-
-
 

@@ -7,8 +7,12 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <TextField fx:id="txt" layoutX="58.0" layoutY="54.0" onAction="#bulEvent" />
-      <Button layoutX="222.0" layoutY="54.0" mnemonicParsing="false" onAction="#bulEvent" text="Button" />
-      <Label fx:id="lbl" layoutX="70.0" layoutY="104.0" text="kelime uzunluğu:" />
+      <TextField fx:id="sayi1" layoutX="71.0" layoutY="53.0" onAction="#toplaEvent" />
+      <TextField fx:id="sayi2" layoutX="71.0" layoutY="90.0" onAction="#toplaEvent" />
+      <Button layoutX="119.0" layoutY="125.0" mnemonicParsing="false" onAction="#toplaEvent" text="Topla" />
+      <TextField fx:id="sonuc" layoutX="71.0" layoutY="160.0" onAction="#toplaEvent" />
+      <Label layoutX="26.0" layoutY="57.0" text="1.Sayı:" />
+      <Label layoutX="26.0" layoutY="94.0" text="2.Sayı:" />
+      <Label layoutX="26.0" layoutY="164.0" text="Sonuç:" />
    </children>
 </AnchorPane>
